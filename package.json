@@ -11,7 +11,13 @@
     "publish": "electron-forge publish --arch arm64,x64",
     "lint": "echo \"No linting configured\""
   },
-  "keywords": [],
+  "keywords": [
+    "albert",
+    "menubar",
+    "electron",
+    "assistant",
+    "chatgpt"
+  ],
   "author": {
     "name": "William Garneau",
     "email": "williamgarneau.dev@gmail.com"
@@ -30,13 +36,6 @@
     "type": "git",
     "url": "https://github.com/Thyix/albert"
   },
-  "tags": [
-    "albert",
-    "menubar",
-    "electron",
-    "assistant",
-    "chatgpt"
-  ],
   "devDependencies": {
     "@electron-forge/cli": "^6.0.4",
     "@electron-forge/maker-deb": "^6.0.4",
