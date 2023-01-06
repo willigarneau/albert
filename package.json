@@ -30,6 +30,13 @@
     "type": "git",
     "url": "https://github.com/Thyix/albert"
   },
+  "tags": [
+    "albert",
+    "menubar",
+    "electron",
+    "assistant",
+    "chatgpt"
+  ],
   "devDependencies": {
     "@electron-forge/cli": "^6.0.4",
     "@electron-forge/maker-deb": "^6.0.4",
