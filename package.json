@@ -3,7 +3,7 @@
   "productName": "albert",
   "version": "1.0.0",
   "description": "My Electron application description",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package --arch arm64,x64",
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Thyix/albert"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.4",

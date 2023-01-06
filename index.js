@@ -9,8 +9,11 @@ const {
   Menu,
   globalShortcut,
   shell,
+  nativeImage,
 } = require("electron");
 const contextMenu = require("electron-context-menu");
+
+const image = nativeImage.createFromPath(path.join(__dirname, "assets", "robot-16.png"));
 
 app.on("ready", () => {
   const tray = new Tray(image);
@@ -18,18 +21,18 @@ app.on("ready", () => {
   const menuBar = menubar({
     browserWindow: {
       icon: image,
-      transparent: path.join(__dirname, "assets", "robot-128.png"),
       webPreferences: {
         webviewTag: true,
+        nativeWindowOpen: true,
       },
-      width: 450,
-      height: 550,
+      width: 400,
+      height: 600,
     },
     tray,
     showOnAllWorkspaces: true,
     preloadWindow: true,
-    showDockIcon: false,
-    icon: path.join(__dirname, "assets", "robot-64.png"),
+    showDockIcon: true,
+    icon: image,
   });
 
   menuBar.on("ready", () => {
@@ -84,6 +87,8 @@ app.on("ready", () => {
 
     const menu = new Menu();
     Menu.setApplicationMenu(menu);
+
+    console.log("ready")
   });
 
   app.on("web-contents-created", (e, contents) => {

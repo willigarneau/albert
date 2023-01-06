@@ -1,0 +1,16 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+webview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:  calc(100vh);
+  display: inline-flex !important;
+}
