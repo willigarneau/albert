@@ -1,7 +1,6 @@
 require("update-electron-app")();
-
 const { menubar } = require("menubar");
-
+const Sentry = require("@sentry/electron");
 const path = require("path");
 const {
   app,
@@ -12,6 +11,8 @@ const {
   nativeImage,
 } = require("electron");
 const contextMenu = require("electron-context-menu");
+
+Sentry.init({ dsn: "https://eb6fb57c831b4fef9b55b9322c1df056@o249226.ingest.sentry.io/4504459919818752" });
 
 const image = nativeImage.createFromPath(path.join(__dirname, "assets", "robot-16.png"));
 

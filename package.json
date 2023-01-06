@@ -1,8 +1,8 @@
 {
   "name": "albert",
   "productName": "albert",
-  "version": "1.0.0",
-  "description": "My Electron application description",
+  "version": "0.0.1",
+  "description": "Albert - The personal assistant hidden in your menu bar",
   "main": "index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -18,6 +18,8 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@electron-forge/publisher-github": "^6.0.4",
+    "@sentry/electron": "^4.1.2",
     "electron-context-menu": "3.6.1",
     "electron-squirrel-startup": "^1.0.0",
     "fix-path": "3.0.0",
