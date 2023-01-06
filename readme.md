@@ -1,6 +1,9 @@
 # Albert
 
+<img src="./assets/robot-1024.png" width="400"/>
+
 [![Albert CI](https://github.com/Thyix/albert/actions/workflows/node.js.yml/badge.svg)](https://github.com/Thyix/albert/actions/workflows/node.js.yml)
+
 
 Albert is a simple menu bar application for macOS that allows you to ask questions and get answers. It is powered by [GPT-3](https://en.wikipedia.org/wiki/OpenAI#GPT-3).
 
@@ -19,7 +22,7 @@ Albert is a simple menu bar application for macOS that allows you to ask questio
 If you want to contribute to Albert, you can do so by forking the repository and creating a pull request. If you want to add a feature, please create an issue first so we can discuss it.
 
 # License
-Albert is licensed under the [MIT License]("MIT-LICENSE").
+Albert is licensed under the [MIT License](./MIT-LICENSE.txt).
 
 # Credits
 Albert is powered by [GPT-3]("https://en.wikipedia.org/wiki/OpenAI#GPT-3") and [Electron]("https://www.electronjs.org/").
@@ -28,4 +31,4 @@ Albert is powered by [GPT-3]("https://en.wikipedia.org/wiki/OpenAI#GPT-3") and [
 Albert is not affiliated with OpenAI in any way. The use of GPT-3 is subject to the [OpenAI Terms of Service]("https://beta.openai.com/tos"). Please read them carefully before using Albert.
 
 # Screenshots
-![Albert Screenshot](https://i.imgur.com/0Z7ZQ0M.png)
+![Albert Screenshot](./assets/albert-screenshot.png)
