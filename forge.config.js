@@ -1,6 +1,17 @@
 module.exports = {
   packagerConfig: {},
   rebuildConfig: {},
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: "Thyix",
+          name: "albert-app",
+        },
+        prerelease: true,
+    }
+  }],
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
